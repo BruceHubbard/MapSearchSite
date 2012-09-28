@@ -3,6 +3,6 @@ class AddressController < ApplicationController
   end
 
   def search
-  	render :json => Address.all
+  	render :json => Address.where("latitude <= ?", params[:north]).all
   end
 end
