@@ -9,3 +9,5 @@
 Address.delete_all
 Address.create(:address1 => "2033 Macintosh Ln.", :city => "Middletown", :state => "OH", :zip => "45044",
 				:latitude => 33.5206, :longitude => -86.8025)
+Address.create(:address1 => "123 Fake St.", :city => "Middletown", :state => "OH", :zip => "45044",
+				:latitude => 38.5206, :longitude => -110.8025)

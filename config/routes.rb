@@ -1,4 +1,7 @@
 MapSearchSite::Application.routes.draw do
+  get "address/index"
+  get "address/search"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
