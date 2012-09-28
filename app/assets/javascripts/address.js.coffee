@@ -2,6 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
+	addressTpl = Handlebars.compile($('#address-tmpl').html())
+
 	mapOptions = {
 		center: new google.maps.LatLng(39,-94),
 		zoom: 4,
@@ -19,6 +21,8 @@ $ ->
 				data: {north: north, south: south, east: east, west: west},
 				success: (data) ->
 					console.log(data)
+					html = addressTpl({addresses: data})
+					$('#listing .addresses').html(html)
 			})
 			
 	})

@@ -1,3 +1,16 @@
 <div class="container">
 	<div id="map"></div>
+	<div id="listing">
+		<h2>Addresses</h2>
+		<div class="addresses">
+		</div>
+	</div>
 </div>
+
+<script id="address-tmpl" type="text/x-handlebars-template">
+{{#addresses}}
+    <div class="address">
+    	{{address1}}
+    </div>
+{{/addresses}}
+</script>

@@ -15,8 +15,6 @@ class MapSearch
 
 	map: -> @options.map
 
-window.MapSearch = MapSearch
-
 class GoogleMapSearch extends MapSearch
 	@EventThreshold: 100
 
@@ -56,3 +54,5 @@ class BingMapSearch extends MapSearch
 
 	addEvents: ->
 		Microsoft.Maps.Events.addHandler(@options.map, 'viewchangeend', () => @search())
+
+window.BingMapSearch = BingMapSearch
