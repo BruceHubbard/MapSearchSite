@@ -16,7 +16,7 @@ class MapSearch
 	map: -> @options.map
 
 class GoogleMapSearch extends MapSearch
-	@EventThreshold: 100
+	@EventThreshold: 400
 
 	createMap: -> 
 		@options.map = new google.maps.Map(@options.el,@options.mapOptions)
