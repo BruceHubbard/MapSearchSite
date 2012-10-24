@@ -22,9 +22,10 @@
 		background: black;
 		bottom: 20px;
 		color: white;
+		border-radius: 8px;
 
 		background: rgb(0, 0, 0);
-		background: rgba(0, 0, 0, 0.6);	
+		background: rgba(0, 0, 0, 0.3);	
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 
@@ -32,6 +33,9 @@
 
 		.addresses {
 			overflow: auto;
+			padding: 15px;
+
+			.address { margin-bottom: 10px; }
 		}
 	}
 }
